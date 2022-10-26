@@ -623,8 +623,6 @@ section.company {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  background-color: blue;
 }
 
 .marketing-image {
@@ -634,22 +632,38 @@ section.company {
 }
 
 .marketing-image img {
-  width: 70%;
+  width: 100%;
 }
 
 .marketing-infos {
-  width: 80%;
+  width: 70%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: red;
 }
 
 .sub-info {
-  width: 10%;
-  background-color: purple;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-block: 60px;
 }
 
+.marketing-mark {
+  width: 20%;
+}
+
+hr {
+  background-color: #ff8001;
+}
+
+.marketing-desc {
+  font-size: 20px;
+  padding: 20px;
+  color: white;
+}
 
 /* ---------- CONTENT ---------- */
 
