@@ -2,7 +2,17 @@
 
 const itens = document.getElementById('itens');
 
+let isExpanded = false
 
+function clickMenu() {
+  if(!isExpanded) {
+    itens.className = "expanded"
+    isExpanded = true
+  } else {
+    itens.className = "menu-nav"
+    isExpanded = false
+  }
+}
 
 
 // ----------  PRODUCTS ---------- //

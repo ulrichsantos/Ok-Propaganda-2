@@ -24,6 +24,8 @@ nav {
   height: 90px;
   padding: 30px;
   font-weight: 500;
+  position: fixed;
+  z-index: 999999;
 
   display: flex;
   justify-content: space-between;
@@ -98,11 +100,51 @@ nav {
   display: none;
 }
 
+.expanded {
+  width: 100vw;
+  height: 100vh;
+
+  position: absolute;
+  top: 90px;
+  left: 0;
+
+  background-image: linear-gradient(
+    to right,
+    #ff8b00,
+    #ff8001,
+    #ff6c00,
+    #fe5800
+  );
+  background-color: #ff4e00;
+  z-index: 999999;
+
+  padding-left: 150px;
+  padding-block: 50px;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.expanded li {
+  list-style: none;
+}
+
+.expanded a {
+  text-decoration: none;
+  color: white;
+
+}
+
+.expanded a:hover {
+  color: black;
+  transition: 0.3s;
+}
+
+
 /* ---------- HEADER ---------- */
 
 header {
   width: 100%;
-  height: 90vh;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
@@ -112,7 +154,7 @@ header {
 
 .slider {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -274,8 +316,16 @@ section.company {
 
 /* ---------- WORKS WE DID IT ---------- */
 
+.total-client {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .client {
+  width: 100%;
   position: relative;
   overflow: hidden;
   padding: 20px;
@@ -291,10 +341,13 @@ section.company {
 }
 
 .client-container {
-  padding: 0 10vw;
+  margin: 0 auto;
+  width: 80%;
   display: flex;
+  justify-content: center;
   overflow-x: auto;
   scroll-behavior: smooth;
+  background-color: transparent;
 }
 
 .client-container::-webkit-scrollbar {
@@ -335,16 +388,15 @@ section.company {
 .pre-btn,
 .nxt-btn {
   border: none;
-  width: 10vw;
+  width: 10%;
   height: 80%;
   position: absolute;
   top: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
   cursor: pointer;
-  z-index: 9999;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0)0%, #ff8001);
+  z-index: 999;
+  background-color: transparent;
 }
 
 .pre-btn {
@@ -722,7 +774,7 @@ hr {
 }
 
 .form-control input,
-.form-control textarea { 
+.form-control textarea {
   width: 435px;
   border: none;
   border-bottom: 2px solid white;
@@ -745,7 +797,8 @@ textarea::placeholder {
   font-family: 'Poppins', sans-serif;
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
   box-shadow: 0 0 0 0;
   outline: 0;
 }
@@ -824,7 +877,8 @@ button svg {
 .medias img {
   width: 30px;
   height: 30px;
-  background-color: #ff8b00;    padding: 5px;
+  background-color: #ff8b00;
+  padding: 5px;
   border-radius: 50%;
   border: 1px solid white;
 }
@@ -832,4 +886,3 @@ button svg {
 .medias img:hover {
   background-color: white;
 }
-
