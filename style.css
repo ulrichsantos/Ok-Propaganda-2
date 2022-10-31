@@ -94,6 +94,15 @@ nav {
   width: 20px;
 }
 
+.menu-phone:hover,
+.menu-wpp:hover,
+.menu-email:hover,
+.menu-insta:hover {
+  background-color: #fe5d00;
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
 /* ---------- NAV-EXPANDED ---------- */
 
 .menu-nav {
@@ -737,7 +746,6 @@ hr {
 .content-image {
   width: 50%;
 
-  background-color: red;
 }
 
 .content-image img {
@@ -823,9 +831,10 @@ button svg {
 }
 
 .content-extra-infos {
-  width: 75%;
+  width: 435px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   gap: 15px;
   padding-block: 60px;
 }
