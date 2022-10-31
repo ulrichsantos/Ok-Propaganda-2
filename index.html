@@ -49,19 +49,18 @@
       </div>
       <menu class="menu-nav" id="itens">
         <ul>
-          <li><a href="#">Apresentação</a></li>
-          <li><a href="#">Quem somos</a></li>
-          <li><a href="#">Trabalhos</a></li>
-          <li><a href="#">Clientes</a></li>
-          <li><a href="#">Outdoors</a></li>
-          <li><a href="#">Nossos Pontos</a></li>
-          <li><a href="#">Marketing digital</a></li>
+          <li><a href="#home" onclick="clickMenu()">Apresentação</a></li>
+          <li><a href="#company" onclick="clickMenu()">Quem somos</a></li>
+          <li><a href="#client-attend" onclick="clickMenu()">Clientes</a></li>
+          <li><a href="#total-clients" onclick="clickMenu()">Nossos trabalhos</a></li>
+          <li><a href="#outdoors" onclick="clickMenu()">Outdoors</a></li>
+          <li><a href="#marketing" onclick="clickMenu()">Marketing digital</a></li>
           <li><a href="#content" onclick="clickMenu()">Contato</a></li>
         </ul>
       </menu>
     </nav>
 
-    <header>
+    <header id="home">
       <div class="slider">
         <div class="slider-controls">
           <div class="slider-control" onclick="goPrev()"><</div>
@@ -129,7 +128,7 @@
       </div>
     </header>
 
-    <section class="company">
+    <section class="company" id="company">
       <div class="company-title">
         SOMOS A <br />
         OK!PROPAGANDA
@@ -159,7 +158,7 @@
       </div>
     </section>
 
-    <section class="client-attend">
+    <section class="client-attend" id="client-attend" onclick="clickMenu()">
       <h2>NOSSOS CLIENTES</h2>
       <div class="client-box">
         <div class="client-brand">
@@ -180,7 +179,7 @@
       </div>
     </section>
 
-    <section class="total-client">
+    <section class="total-client" id="total-clients" onclick="clickMenu()">
       <h2 class="client-category">TRABALHAMOS QUE REALIZAMOS</h2>
       <div class="client">
         <button class="pre-btn">
@@ -314,7 +313,7 @@
       </div>
     </section>
 
-    <div class="outdoor-title">CONHEÇA NOSSOS OUTDOORS</div>
+    <div class="outdoor-title" id="outdoors">CONHEÇA NOSSOS OUTDOORS</div>
     <section class="outdoors">
       <div class="outdoor-slider">
         <input type="radio" name="radio-btn" id="radio1" />
@@ -376,7 +375,7 @@
       </div>
     </section>
 
-    <section class="maps">
+    <!--<section class="maps">
       <h1>CONFIRA NOSSOS PONTOS</h1>
       <div class="points">
         <div class="points-list">
@@ -411,9 +410,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
 
-    <section class="marketing">
+    <section class="marketing" id="marketing">
       <div class="marketing-image">
         <img src="./assets/marketing/hbo-example.webp" alt="" />
       </div>
