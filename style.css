@@ -110,7 +110,7 @@ nav {
 }
 
 .expanded {
-  width: 100vw;
+  width: 20vw;
   height: 100vh;
 
   position: absolute;
@@ -121,13 +121,11 @@ nav {
     to right,
     #ff8b00,
     #ff8001,
-    #ff6c00,
-    #fe5800
   );
-  background-color: #ff4e00;
+  background-color: #ff8b00;
   z-index: 999999;
 
-  padding-left: 150px;
+  padding-left: 30px;
   padding-block: 50px;
   font-size: 35px;
   font-weight: 500;
@@ -135,6 +133,7 @@ nav {
 
 .expanded li {
   list-style: none;
+  margin-bottom: 15px;
 }
 
 .expanded a {
@@ -275,6 +274,8 @@ section.company {
 
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 
   padding: 100px 0 0 0;
 }
@@ -283,6 +284,7 @@ section.company {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .bul-title {
@@ -319,6 +321,9 @@ section.company {
 
 .client-box {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 20px;
   gap: 50px;
   padding-bottom: 120px;
 }
@@ -894,4 +899,18 @@ button svg {
 
 .medias img:hover {
   background-color: white;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (min-width: 576px) {
+  
+}
+
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: 992px) {
+  
 }
