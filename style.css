@@ -19,7 +19,6 @@ body {
   overflow-y: scroll;
 }
 
-
 /* ---------- NAV ---------- */
 
 nav {
@@ -161,6 +160,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .slider {
