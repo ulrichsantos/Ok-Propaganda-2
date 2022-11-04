@@ -117,11 +117,7 @@ nav {
   top: 90px;
   left: 0;
 
-  background-image: linear-gradient(
-    to right,
-    #ff8b00,
-    #ff8001,
-  );
+  background-image: linear-gradient(to right, #ff8b00, #ff8001);
   background-color: #ff8b00;
   z-index: 999999;
 
@@ -139,7 +135,6 @@ nav {
 .expanded a {
   text-decoration: none;
   color: white;
-
 }
 
 .expanded a:hover {
@@ -147,6 +142,11 @@ nav {
   transition: 0.3s;
 }
 
+.menu-itens-expanded {
+  width: 85vw;
+  height: 10vh;
+  background-color: red;
+}
 
 /* ---------- HEADER ---------- */
 
@@ -284,7 +284,6 @@ section.company {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .bul-title {
@@ -440,8 +439,9 @@ section.company {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
-  font-size: 50px;
+  font-size: 70px;
   font-weight: bold;
   margin-bottom: 20px;
   color: #ff8001;
@@ -476,7 +476,7 @@ section.company {
 }
 
 .outdoor-slide img {
-  width: 100%;
+  height: 100%;
 }
 
 .outdoor-manual {
@@ -692,6 +692,7 @@ section.company {
 }
 
 .marketing-image {
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -702,9 +703,10 @@ section.company {
 }
 
 .marketing-infos {
-  width: 70%;
+  width: 75%;
+  padding-inline: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -750,7 +752,7 @@ hr {
 
 .content-image {
   width: 50%;
-
+  display: block;
 }
 
 .content-image img {
@@ -775,9 +777,14 @@ hr {
 }
 
 .content-form {
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+form {
+  width: 100%;
 }
 
 .form-control {
@@ -788,7 +795,7 @@ hr {
 
 .form-control input,
 .form-control textarea {
-  width: 435px;
+  width: 100%;
   border: none;
   border-bottom: 2px solid white;
   background-color: #ff8b00;
@@ -836,7 +843,7 @@ button svg {
 }
 
 .content-extra-infos {
-  width: 435px;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -903,14 +910,179 @@ button svg {
 
 /* ---------- RESPONSIVE ---------- */
 
-@media (min-width: 576px) {
-  
+@media (max-width: 767px) {
+
+  .company-title,
+  .client-attend h2,
+  .client-category,
+  .outdoor-title {
+    font-size: 50px;
+    margin-inline: 10px;
+  }
+
+  .expanded {
+    width: 100vw;
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-image: linear-gradient(
+      to right,
+      #ff8b00,
+      #ff8001,
+      #ff6c00,
+      #fe5800
+    );
+    background-color: #ff4e00;
+  }
+
+  #expanded {
+    display: flex;
+  }
+
+  #menu-itens-expanded {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+
+  #menu-itens-expanded a {
+    display: flex;
+    align-items: center;
+    padding-bottom: 6px;
+  }
+
+  .menu-phone,
+  .menu-wpp,
+  .menu-email,
+  .menu-insta {
+    display: none;
+  }
+
+  .menu-expanded {
+    display: flex;
+  }
+
+  .menu-logo a {
+    padding-left: 0px;
+  }
+
+  .outdoor-slider {
+    height: 40vh;
+  }
+
+  .outdoors {
+    height: 40vh;
+  }
+
+  .marketing-image {
+    width: 80%;
+  }
+
+  .marketing-desc {
+    font-size: 15px;
+  }
+
+  .marketing-infos {
+    width: 100%;
+  }
+
+  .content-image {
+    display: none;
+  }
+
+  .content-info {
+    width: 100%;
+  }
+
+  .content-social {
+    height: 83px;
+    display: flex;
+    align-items: center;
+  }
+
+  .content-title {
+    font-size: 40px;
+    margin-top: 20px;
+  }
 }
 
 @media (min-width: 768px) {
-  
+  #menu-itens-expanded {
+    display: none;
+  }
+
+  .expanded {
+    width: 50vw;
+  }
+
+  .company-title,
+  .client-attend h2,
+  .client-category,
+  .outdoor-title {
+    font-size: 50px;
+    margin-inline: 10px;
+  }
+
+  .image-slide {
+    max-height: 50vh;
+  }
+
+  .outdoor-slider {
+    height: 50vh;
+  }
+
+  .outdoors {
+    height: 50vh;
+  }
+
+  .marketing-image {
+    width: 80%;
+  }
+
+  .marketing-desc {
+    font-size: 15px;
+  }
+
+  .marketing-infos {
+    width: 100%;
+  }
+
+  .content-image {
+    display: none;
+  }
+
+  .content-info {
+    width: 100%;
+  }
+
+  .content-social {
+    height: 83px;
+    display: flex;
+    align-items: center;
+  }
+
+  .content-title {
+    font-size: 40px;
+    margin-top: 20px;
+  }
 }
 
 @media (min-width: 992px) {
-  
+  .content-image {
+    display: block;
+  }
+
+  .content-image {
+    width: 50%;
+    display: block;
+  }
+  .content-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ff8b00;
+  }
 }
