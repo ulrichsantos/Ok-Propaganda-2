@@ -836,6 +836,7 @@ input:focus {
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
+  background-color: white;
 }
 
 button svg {
@@ -849,6 +850,10 @@ button svg {
   justify-content: flex-start;
   gap: 15px;
   padding-block: 60px;
+}
+
+.content-phone p a {
+  text-decoration: none;
 }
 
 .content-phone,
@@ -1107,7 +1112,9 @@ button svg {
     background-color: #ff8b00;
   }
 
+
+
   .outdoors {
-    height: 70vh;
+    width: 80vw;
   }
 }
