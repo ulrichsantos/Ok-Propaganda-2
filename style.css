@@ -107,6 +107,7 @@ nav {
 
 .menu-nav {
   display: none;
+  overflow-y:hidden;
 }
 
 .expanded {
@@ -125,6 +126,7 @@ nav {
   padding-block: 50px;
   font-size: 35px;
   font-weight: 500;
+
 }
 
 .expanded li {
@@ -837,6 +839,7 @@ input:focus {
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
   background-color: white;
+  color: black;
 }
 
 button svg {
@@ -854,6 +857,7 @@ button svg {
 
 .content-phone p a {
   text-decoration: none;
+  color: white;
 }
 
 .content-phone,
@@ -921,7 +925,7 @@ button svg {
   .client-attend h2,
   .client-category,
   .outdoor-title {
-    font-size: 50px;
+    font-size: 30px;
     margin-inline: 10px;
   }
 
@@ -949,7 +953,7 @@ button svg {
   #menu-itens-expanded {
     display: flex;
     align-items: center;
-    height: 50px;
+    height: 110px;
   }
 
   #menu-itens-expanded a {
@@ -1030,8 +1034,6 @@ button svg {
   .content-group {
   width: 100%;
   }
-
-
 }
 
 @media (min-width: 768px) {
@@ -1047,7 +1049,7 @@ button svg {
   .client-attend h2,
   .client-category,
   .outdoor-title {
-    font-size: 50px;
+    font-size: 40px;
     margin-inline: 10px;
   }
 
@@ -1111,8 +1113,6 @@ button svg {
     align-items: center;
     background-color: #ff8b00;
   }
-
-
 
   .outdoors {
     width: 80vw;
