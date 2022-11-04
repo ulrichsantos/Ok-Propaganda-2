@@ -847,7 +847,7 @@ button svg {
 }
 
 .content-extra-infos {
-  width: 70%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -925,7 +925,7 @@ button svg {
   .client-attend h2,
   .client-category,
   .outdoor-title {
-    font-size: 30px;
+    font-size: 40px;
     margin-inline: 10px;
   }
 
@@ -1049,7 +1049,7 @@ button svg {
   .client-attend h2,
   .client-category,
   .outdoor-title {
-    font-size: 40px;
+    font-size: 50px;
     margin-inline: 10px;
   }
 
